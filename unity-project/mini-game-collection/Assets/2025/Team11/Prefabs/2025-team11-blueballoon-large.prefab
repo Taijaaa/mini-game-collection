@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6814862915211079760}
   - component: {fileID: 5258494851192607446}
   m_Layer: 0
-  m_Name: ball_blue_large (1)
+  m_Name: 2025-team11-blueballoon-large
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ad50629644efb8b4ab32ad70fd407b51, type: 2}
+  m_Sprite: {fileID: 21300000, guid: 5df777b3479758242910d8e13a0b22a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

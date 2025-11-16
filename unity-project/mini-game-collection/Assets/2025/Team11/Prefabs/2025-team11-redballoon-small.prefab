@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8087291625121745509}
   - component: {fileID: 4044312666052949536}
   m_Layer: 0
-  m_Name: ball_red_large
+  m_Name: 2025-team11-redballoon-small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 82c41de79d02c5d4fac486cbdafe63db, type: 2}
+  m_Sprite: {fileID: 21300000, guid: 214f5d67614cac84493255d861d1550f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

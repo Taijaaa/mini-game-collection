@@ -394,25 +394,6 @@ Transform:
   - {fileID: 1726231318}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1040328030 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 567497938101901958, guid: 8a77a1b3b63f8bf4cad8cab5959b8521,
-    type: 3}
-  m_PrefabInstance: {fileID: 1973644227}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1040328036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1040328030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91f0a5a28a169094a809eba2542844ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  balloons: []
 --- !u!1 &1122135999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1780,7 +1761,7 @@ PrefabInstance:
     - target: {fileID: 567497938101901958, guid: 8a77a1b3b63f8bf4cad8cab5959b8521,
         type: 3}
       propertyPath: m_Name
-      value: ball_red_large (1)
+      value: 2025-team11-redballoon-large
       objectReference: {fileID: 0}
     - target: {fileID: 955548761388183242, guid: 8a77a1b3b63f8bf4cad8cab5959b8521,
         type: 3}
@@ -1835,11 +1816,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 567497938101901958, guid: 8a77a1b3b63f8bf4cad8cab5959b8521,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1040328036}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a77a1b3b63f8bf4cad8cab5959b8521, type: 3}
 --- !u!1001 &678459170700651645
 PrefabInstance:
@@ -1902,7 +1879,7 @@ PrefabInstance:
     - target: {fileID: 1100901284566364981, guid: 176b4b75dfcb0d74584c9bf3986dd885,
         type: 3}
       propertyPath: m_Name
-      value: ball_blue_large (1)
+      value: 2025-team11-blueballoon-large
       objectReference: {fileID: 0}
     - target: {fileID: 5258494851192607446, guid: 176b4b75dfcb0d74584c9bf3986dd885,
         type: 3}
