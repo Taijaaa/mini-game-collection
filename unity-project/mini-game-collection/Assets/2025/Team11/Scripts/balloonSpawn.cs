@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class balloonSpawn : MonoBehaviour
 {
+    public GameObject balloons;
+    public float spawnDelay = 5f;
+    public float spawnInterval = 4f;
     //Transform ball_blue_largePrefab;
     //float spawnTimerInterval = 2f;
 
@@ -12,7 +15,7 @@ public class balloonSpawn : MonoBehaviour
     //Vector2 randomPosition;
     //float randomX = 3;
     //float randomY = 3;
-    public GameObject[] balloons;
+    //public GameObject[] balloons;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,18 +23,19 @@ public class balloonSpawn : MonoBehaviour
         //float randomX = 3;
         //float randomY = 3;
         //objectHolder = new GameObject("Object Holder").Transform;
+        InvokeRepeating("SpawnObject", spawnDelay, spawnInterval);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            int randomIndex = Random.Range(0, balloons.Length);
-            Vector2 randomSpawnPosition = new Vector2(Random.Range(-10, 11), Random.Range(-10, 11));
+        //if(Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    int randomIndex = Random.Range(0, balloons.Length);
+        //    Vector2 randomSpawnPosition = new Vector2(Random.Range(-10, 11), Random.Range(-10, 11));
 
-            Instantiate(balloons[randomIndex], randomSpawnPosition, Quaternion.identity);
-        }
+        //    Instantiate(balloons[randomIndex], randomSpawnPosition, Quaternion.identity);
+        //}
         //float xPosition = Random.Range(0 - randomX, 0 + randomX);
         //float yPosition = Random.Range(0 - randomY, 0 + randomY);
 
@@ -58,4 +62,13 @@ public class balloonSpawn : MonoBehaviour
     //    //spawnPos.x += Random.Range(-1.6f, 1.6f);
     //    //Instantiate(ball_blue_largePrefab, spawnPos, Quaternion.identity, objectHolder);
     //}
+
+    void SpawnObject()
+    {
+        Vector2 randomSpawnPosition = new Vector2(Random.Range(-4, 2), Random.Range(-2, 4));
+
+        GameObject spawnedObjects = Instantiate(balloons, randomSpawnPosition, Quaternion.identity);
+
+        //spawnedObjects.GetComponent<Renderer>().material.color = Random.ColorHSV;
+    }
 }
