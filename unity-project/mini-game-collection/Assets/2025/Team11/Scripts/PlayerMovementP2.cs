@@ -11,6 +11,8 @@ namespace MiniGameCollection.Games2025.Team11
         private Rigidbody2D rb;
         private Vector2 moveInput;
 
+        public int pointsAdded = 1;
+
         void Start()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -65,6 +67,7 @@ namespace MiniGameCollection.Games2025.Team11
                 {
                     if (!collider.GetComponent<Balloon>().player1) Debug.Log("PLAYER 2");
                     Destroy(collider.gameObject);
+                    ScoreManagerP2.instance.AddScore(pointsAdded);
                 }
             }
         }
