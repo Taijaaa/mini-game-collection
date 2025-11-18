@@ -5,7 +5,7 @@ using UnityEngine;
 public class balloonSpawn : MonoBehaviour
 {
     public GameObject balloons;
-    public float spawnDelay = 5f;
+    public float spawnDelay = 3f;
     public float spawnInterval = 4f;
 
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class balloonSpawn : MonoBehaviour
 
     void SpawnObject()
     {
-        Vector2 randomSpawnPosition = new Vector2(Random.Range(-4, 2), Random.Range(-2, 4));
+        Vector2 randomSpawnPosition = new Vector2(Random.Range(-5, 3.5f), Random.Range(-3.5f, 5));
 
         GameObject spawnedObjects = Instantiate(balloons, randomSpawnPosition, Quaternion.identity);
     }
